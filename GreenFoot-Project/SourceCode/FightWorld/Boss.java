@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Boss extends Actor
 {
-    private int health;
+    private int health = 5;
     private boolean phase_one;
     private boolean phase_two;
     private GreenfootImage boss_core;
@@ -21,7 +21,9 @@ public class Boss extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if(Greenfoot.getRandomNumber(10) > 8) {     //attack about 20% of the time
+            this.attack();
+        }
     }
     public int get_health() {
         return health;
@@ -32,7 +34,7 @@ public class Boss extends Actor
     public boolean in_phase_two() {
         return phase_two;
     }
-    private void attack() {}        //calls attack methods on all arms of the boss
-    
-    protected void get_hit() {}        //To be called from eye subcless on hit to take down main boss health uniformly
+    protected void attack() {}             //calls attack methods on all arms of the boss    
+   
+    protected void get_hit() {}        //To be called from eye destructor
 }

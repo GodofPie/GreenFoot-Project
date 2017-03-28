@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Tue Mar 28 14:37:15 CDT 2017
+#Tue Mar 28 14:54:03 CDT 2017
 editor.fx.0.height=739
 target2.width=80
 target5.naviview.expanded=true
@@ -74,6 +74,7 @@ editor.swing.0.width=0
 target6.name=BadGuy1
 target6.naviview.expanded=false
 editor.fx.0.width=816
+class.Boss_attack.image=button-red.png
 class.Sword.superclass=greenfoot.Actor
 dependency2.to=FightWorld
 target3.type=ClassTarget
@@ -120,6 +121,7 @@ dependency8.to=Enemy
 simulation.speed=45
 target7.height=50
 dependency5.type=UsesDependency
+class.Boss_attack.superclass=greenfoot.Actor
 dependency9.type=UsesDependency
 target3.editor.height=700
 target6.width=80
