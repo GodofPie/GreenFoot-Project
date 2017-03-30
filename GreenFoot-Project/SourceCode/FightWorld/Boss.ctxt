@@ -13,5 +13,5 @@ comment4.target=boolean\ in_phase_two()
 comment5.params=
 comment5.target=void\ attack()
 comment6.params=
-comment6.target=void\ get_hit()
+comment6.target=void\ hit()
 numComments=7

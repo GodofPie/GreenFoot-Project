@@ -21,7 +21,7 @@ public class Boss extends Actor
      */
     public void act() 
     {
-        if(Greenfoot.getRandomNumber(100) > 98) {     //attack about 20% of the time
+        if(Greenfoot.getRandomNumber(100) > 98) {     //attack about 2% of the time
             this.attack();
         }
     }
@@ -36,5 +36,7 @@ public class Boss extends Actor
     }
     protected void attack() {}             //calls attack methods on all arms of the boss    
    
-    protected void get_hit() {}        //To be called from eye destructor
+    protected void hit() {          //To be called from eye destruction
+        this.health--;
+    }        
 }

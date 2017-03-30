@@ -25,5 +25,8 @@ public class Boss_attack extends Actor
         } else {
             move(5);
         }
+        if(isAtEdge()) {
+            getWorld().removeObject(this);
+        }
     }    
 }

@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class boss_eye extends Boss
 {
-    private int health = 1;
+    private int health = 5;
     /**
      * Act - do whatever the boss_eye wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,8 +17,11 @@ public class boss_eye extends Boss
     {
         Actor sword = getOneIntersectingObject(Sword.class);
         if(this.isTouching(Sword.class) && Sword.attacking) {
-            super.get_hit();
-            getWorld().removeObject(this);
+            this.health--;
+            if(health == 0) {
+                super.hit();
+                getWorld().removeObject(this);
+            }
         }
     }    
 }
