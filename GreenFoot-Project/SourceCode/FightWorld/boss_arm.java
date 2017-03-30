@@ -9,6 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class boss_arm extends Boss
 {
     protected void attack() {       //do attaack whenever boss.attack is called
-        
+        this.getWorld().addObject(new Boss_attack(),this.getX(),this.getY());
     }
 }

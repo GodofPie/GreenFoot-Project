@@ -21,7 +21,7 @@ public class Boss extends Actor
      */
     public void act() 
     {
-        if(Greenfoot.getRandomNumber(10) > 8) {     //attack about 20% of the time
+        if(Greenfoot.getRandomNumber(100) > 98) {     //attack about 20% of the time
             this.attack();
         }
     }
