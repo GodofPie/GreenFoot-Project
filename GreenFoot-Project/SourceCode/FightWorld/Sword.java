@@ -110,4 +110,8 @@ private boolean justAttacked = false;
         }
         
     }
+    
+    public boolean isAttacking() {
+        return attacking;
+    }
 }
