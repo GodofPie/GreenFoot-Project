@@ -25,7 +25,7 @@ public class BatEnemy extends Enemy
     private GreenfootImage[] images = {new GreenfootImage("bat1.png"), new GreenfootImage("bat2.png"),new GreenfootImage("bat3.png")};
     public void addedToWorld(World world) {
         for(int i = 0; i < images.length; i++){
-            images[i].scale(images[i].getWidth() / 2, images[i].getHeight() / 2);
+            images[i].scale(images[i].getWidth() / 4, images[i].getHeight() / 4);
         }
         setImage(images[animator]); 
     
@@ -86,6 +86,7 @@ public class BatEnemy extends Enemy
     public void checkForDeath(){
         if (health <= 0) {
             getWorld().removeObject(this);
+            Gate.enemiesKilled++;
         }
     }
     public int getNewX(int end)

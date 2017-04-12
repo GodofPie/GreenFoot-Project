@@ -23,7 +23,7 @@ public class FightWorld extends World
         SkeletonEnemy skel = new SkeletonEnemy();
         addObject(fighter, 50, 350);
         addObject(bat, 550, 350);
-        addObject(cat, 50, 50);
+        addObject(cat, 55, 50);
         addObject(skel, 550, 50);
         addObject(gate1, 300, 200);
         

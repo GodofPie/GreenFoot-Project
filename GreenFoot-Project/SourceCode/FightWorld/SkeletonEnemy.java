@@ -7,13 +7,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class SkeletonEnemy extends Enemy
-{   private int destX;
-    private int destY;
-    private int prevX;
-    private int prevY;
+{   
     private int damage = 1;
     private int health = 1;
 
+    
+     public void addedToWorld(World world) {
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() * 2, image.getHeight() * 2);
+        setImage(image);
+    }
     /**
      * Act - do whatever the TopLeftBoat wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -31,7 +34,7 @@ public class SkeletonEnemy extends Enemy
         if (health <= 0) {
            // Actor me = getOneObjectAtOffset(0, 0, TopLeftBoat.class);
             getWorld().removeObject(this);
-           // Gate.enemiesKilled++;
+           Gate.enemiesKilled++;
            
         }
     }

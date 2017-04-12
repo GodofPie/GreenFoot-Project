@@ -19,11 +19,13 @@ public class Boss extends Actor
      * Act - do whatever the Boss wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
     public void act() 
     {
         if(Greenfoot.getRandomNumber(100) > 98) {     //attack about 2% of the time
             this.attack();
         }
+        
     }
     public int get_health() {
         return health;
