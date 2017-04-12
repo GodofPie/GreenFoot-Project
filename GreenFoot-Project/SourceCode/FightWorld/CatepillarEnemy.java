@@ -24,13 +24,13 @@ public class CatepillarEnemy extends Enemy
     }
     public void act() 
     {
-         checkCollisions();
-          checkForDeath();
-          move();
+        move(); 
+        checkCollisions();
+        checkForDeath();
+          
     }  
     public void checkForDeath(){
         if (health <= 0) {
-           // Actor me = getOneObjectAtOffset(0, 0, TopLeftBoat.class);
             getWorld().removeObject(this);
            Gate.enemiesKilled++;
            
@@ -51,17 +51,10 @@ public class CatepillarEnemy extends Enemy
  
   public void move()  
   { 
-      if(atCenter) {
           setLocation(getWorld().getWidth()/2, getWorld().getHeight()/2);
           turn(rotationalSpeed-90);
           move(radius);
           turn(90);
-        } else {
-            move(5);
-            if (getX() == getWorld().getWidth()/2){
-                atCenter = true;
-            }
-        }
     }
 }
 

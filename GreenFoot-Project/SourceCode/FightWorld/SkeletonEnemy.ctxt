@@ -14,4 +14,6 @@ comment5.params=
 comment5.target=int\ getHealth()
 comment6.params=damage
 comment6.target=void\ setHealth(int)
-numComments=7
+comment7.params=
+comment7.target=void\ move()
+numComments=8

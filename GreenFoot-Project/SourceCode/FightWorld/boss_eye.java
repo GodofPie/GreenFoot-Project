@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class boss_eye extends Boss
 {
-    private int health = 5;
+    private int health = 6;
     /**
      * Act - do whatever the boss_eye wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

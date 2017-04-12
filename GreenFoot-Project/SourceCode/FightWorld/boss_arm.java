@@ -9,12 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class boss_arm extends Boss
 {
 private int type = 0; // a 1 means an attacking arm, -1 means a decrotive one
-
-    public boss_arm(int a) {
-        type = a;
+    public void act() {       //do attaack whenever boss.attack is called
+       if(Boss.phase_one && Boss.attacksOnScreen < 3){
+        Boss_attack attack = new Boss_attack();
+        getWorld().addObject(attack, getX(), getY());
+        Boss.attacksOnScreen++;
     }
-    protected void attack() {       //do attaack whenever boss.attack is called
-        //this.getWorld().addObject(new Boss_attack(),this.getX(),this.getY());
+       
     }
     protected void flip(){
         getImage().mirrorHorizontally();

@@ -10,6 +10,9 @@ public class SkeletonEnemy extends Enemy
 {   
     private int damage = 1;
     private int health = 1;
+    private int offset = 0;
+    private boolean needToGoHorz = true;
+    private boolean reverse = false;
 
     
      public void addedToWorld(World world) {
@@ -24,7 +27,7 @@ public class SkeletonEnemy extends Enemy
     public void act() 
     {
         
-         //move();
+         move();
          checkCollisions();
          checkForDeath();
         
@@ -49,5 +52,28 @@ public class SkeletonEnemy extends Enemy
     }
      public void setHealth(int damage) {
         health = health - damage;
+    }
+    public void move () {
+        if (offset < 150) {
+            if(needToGoHorz) {
+                if (getX() > 350) {
+                    move(-5);
+                    offset += 5;
+                } else if (getX() < 550) {
+                    while(getX() < 550){
+                        move(5);
+                        offset += 5;
+                  }
+                }
+            } else {
+                if (getY() < 200) {
+                    setLocation(getX(), getY() + 5);
+                    offset += 5;
+                } else if (getY() > 50) {}
+           }
+        } else if (offset >= 100) {
+           needToGoHorz = !needToGoHorz;
+           offset = 0;
+       }
     }
 }

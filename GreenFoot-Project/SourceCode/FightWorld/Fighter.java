@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Fighter extends Actor {
 
+static int peopleOnScreen = 1;
 static boolean facingScreenRight = true;
 static int X;
 static int Y;
@@ -15,7 +16,7 @@ static int Y;
      * Act - do whatever the Knight wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-     
+     private int health = 3;
     public void addedToWorld(World world)
         {
             Sword mySword = new Sword();
@@ -29,6 +30,9 @@ static int Y;
         checkKeypress();
         X = getX();
         Y = getY();
+        checkCollisions();
+        checkForDeath();
+        
     }    
     
     /**
@@ -60,10 +64,28 @@ static int Y;
         if (Greenfoot.isKeyDown("s"))
         {
             setLocation(getX(), getY()+3);
+        }   
+    }
+    public void hit() {
+        health--;
+    }
+     public void checkCollisions(){
+        Actor b = getOneIntersectingObject(Enemy.class);
+        Actor c = getOneIntersectingObject(Boss.class);
+        if (b != null && !Sword.attacking){
+            this.hit();
+        } else if (c != null && !Sword.attacking) {
+            this.hit();
         }
-        
-       
     }
   
-    
+    public void checkForDeath(){
+        if (health <= 0) {
+            java.util.List swordlist = getObjectsInRange(100, Sword.class);
+            getWorld().removeObject( (Actor) swordlist.get(0));
+            getWorld().removeObject(this);
+            peopleOnScreen --;
+            
+        }
+    }
 }

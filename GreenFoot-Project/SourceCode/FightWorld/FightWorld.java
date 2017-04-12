@@ -22,10 +22,11 @@ public class FightWorld extends World
         CatepillarEnemy cat = new CatepillarEnemy();
         SkeletonEnemy skel = new SkeletonEnemy();
         addObject(fighter, 50, 350);
-        addObject(bat, 550, 350);
-        addObject(cat, 55, 50);
-        addObject(skel, 550, 50);
+       addObject(bat, 550, 350);
+       addObject(cat, getWidth() / 2, 50);
+       // addObject(skel, 550, 50);
         addObject(gate1, 300, 200);
+        setPaintOrder(Fighter.class, Sword.class,  SkeletonEnemy.class, CatepillarEnemy.class, BatEnemy.class, Boss.class, Gate.class); 
         
         
         
@@ -35,6 +36,10 @@ public class FightWorld extends World
      *  
      */
     public void act() {
-        
+        if (Fighter.peopleOnScreen < 1){
+            removeObjects(getObjects(null));
+            setBackground("dead.png");
+            Greenfoot.stop();
     }
+}
 }
