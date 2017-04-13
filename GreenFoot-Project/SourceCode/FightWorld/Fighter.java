@@ -20,6 +20,7 @@ static int Y;
     
     public Fighter() {
         health = 10;
+        peopleOnScreen = 1;
     }
     public void addedToWorld(World world)
         {
@@ -38,7 +39,9 @@ static int Y;
         checkForDeath();
         
     }    
-    
+    public int getHealth() {
+        return health;
+    }
     /**
      * Check whether a control key on the keyboard has been pressed.
      * If it has, react accordingly.
