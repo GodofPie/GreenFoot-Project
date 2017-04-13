@@ -13,6 +13,14 @@ public class Boss_attack extends Boss
     private int targetY = 0;
     private boolean heroFound = false;
     
+    public Boss_attack() {
+        GreenfootImage new_image = this.getImage();
+        int new_width = new_image.getWidth()/2;
+        int new_height = new_image.getHeight()/2;
+        
+        new_image.scale(new_width, new_height);
+        this.setImage(new_image);
+    }
     public void addedToWorld() {
         if (!friendly) {
             friendly = true;
