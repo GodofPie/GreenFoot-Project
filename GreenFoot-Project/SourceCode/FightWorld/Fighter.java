@@ -13,10 +13,14 @@ static boolean facingScreenRight = true;
 static int X;
 static int Y;
     /**
-     * Act - do whatever the Knight wants to do. This method is called whenever
+     * Act - do whatever the Fighter wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-     private int health = 3000;
+    private int health;
+    
+    public Fighter() {
+        health = 10;
+    }
     public void addedToWorld(World world)
         {
             Sword mySword = new Sword();
@@ -85,7 +89,6 @@ static int Y;
             getWorld().removeObject( (Actor) swordlist.get(0));
             getWorld().removeObject(this);
             peopleOnScreen --;
-            
         }
     }
 }
