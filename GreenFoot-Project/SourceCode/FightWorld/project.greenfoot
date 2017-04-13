@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed Apr 12 11:43:41 CDT 2017
+#Wed Apr 12 20:05:52 CDT 2017
 target16.name=boss_eye
 editor.swing.0.y=0
 editor.swing.0.x=0
@@ -36,7 +36,7 @@ target12.x=0
 class.CatepillarEnemy.image=Catepillar.png
 target3.editor.y=42
 target3.editor.x=40
-editor.fx.0.height=739
+editor.fx.0.height=0
 project.charset=UTF-8
 target12.typeParameters=
 dependency15.to=Sword
@@ -72,7 +72,7 @@ target7.typeParameters=
 dependency26.to=Boss
 target8.height=50
 mainWindow.y=0
-mainWindow.x=-8
+mainWindow.x=-9
 target12.showInterface=false
 target3.showInterface=false
 dependency3.to=Enemy
@@ -153,12 +153,12 @@ dependency26.from=FightWorld
 target6.typeParameters=
 target4.type=ClassTarget
 class.BatEnemy.image=bat1.png
-editor.fx.0.y=-32000
-editor.fx.0.x=-32000
+editor.fx.0.y=0
+editor.fx.0.x=0
 dependency11.to=Sword
 class.FightWorld.superclass=greenfoot.World
 target6.height=50
-editor.fx.0.width=816
+editor.fx.0.width=0
 class.FightWorld.image=caveish.png
 dependency5.type=UsesDependency
 dependency2.from=Fighter
@@ -250,7 +250,7 @@ dependency3.type=UsesDependency
 dependency7.from=Gate
 target6.width=110
 readme.width=47
-mainWindow.height=744
+mainWindow.height=1212
 target9.naviview.expanded=false
 editor.swing.0.width=1423
 target14.showInterface=false
@@ -299,6 +299,6 @@ world.lastInstantiated=FightWorld
 dependency14.to=boss_arm
 class.Fighter.superclass=greenfoot.Actor
 target1.height=50
-mainWindow.width=1372
+mainWindow.width=2145
 target4.typeParameters=
 =\=\=\=\=\=\=

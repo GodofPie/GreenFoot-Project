@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Boss extends Actor
 {
-    protected int health = 6;
+    protected int health;
     protected static boolean phase_one = true;
     protected static boolean phase_two = false;
     private GreenfootImage boss_core;
@@ -18,7 +18,9 @@ public class Boss extends Actor
     public boss_arm arm1;
     public boss_arm arm2;
     
-    
+    public Boss() {
+        health = 3;
+    }
     /**
      * Act - do whatever the Boss wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -27,7 +29,10 @@ public class Boss extends Actor
     {
         if(Greenfoot.getRandomNumber(100) > 98) {     //attack about 2% of the time
             this.attack();
-        }       
+        }
+        if(this.health <= 0) {
+            Greenfoot.stop();
+        }
     }
     public int get_health() {
         return health;
@@ -43,7 +48,7 @@ public class Boss extends Actor
         
     }             //calls attack methods on all arms of the boss    
    
-    protected void hit() {          //To be called from eye destruction
+    public void hit() {          //To be called from eye destruction
         this.health--;
     }
      public void checkCollisions(){

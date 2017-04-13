@@ -16,7 +16,7 @@ static int Y;
      * Act - do whatever the Knight wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-     private int health = 3;
+     private int health = 3000;
     public void addedToWorld(World world)
         {
             Sword mySword = new Sword();
