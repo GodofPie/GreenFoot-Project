@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Fri Apr 14 21:45:14 CDT 2017
+#Fri Apr 14 21:51:51 CDT 2017
 target16.name=boss_eye
 editor.swing.0.y=0
 editor.swing.0.x=0
@@ -220,6 +220,7 @@ dependency6.to=Sword
 target4.name=boss_arm
 target1.y=10
 target1.x=100
+class.Menu_text.image=explanationtext.png
 target5.typeParameters=
 dependency13.type=UsesDependency
 dependency10.from=Gate
@@ -261,6 +262,7 @@ target14.showInterface=false
 target5.showInterface=false
 target1.editor.width=900
 target2.width=80
+class.Menu_text.superclass=greenfoot.Actor
 class.boss_arm.superclass=Boss
 target10.name=Boss_attack
 target3.name=BatEnemy
