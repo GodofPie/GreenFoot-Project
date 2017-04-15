@@ -17,6 +17,8 @@ public class Titleworld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
         addObject(new Menu_logo(), 300, 69);
-        addObject(new Menu_text(), 299, 153);
+        addObject(new Menu_text(), 300, 153);
+        addObject(new Startbutton(), 300, 240);
+        addObject(new Quitbutton(), 300, 350);
     }
 }

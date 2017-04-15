@@ -1,8 +1,9 @@
 #Greenfoot properties
-#Fri Apr 14 21:51:51 CDT 2017
+#Fri Apr 14 22:08:19 CDT 2017
 target16.name=boss_eye
 editor.swing.0.y=0
 editor.swing.0.x=0
+class.Startbutton.image=startbutton.png
 target2.name=Gate
 target9.name=Enemy
 dependency11.type=UsesDependency
@@ -153,6 +154,7 @@ dependency22.type=UsesDependency
 dependency29.type=UsesDependency
 dependency26.from=FightWorld
 target6.typeParameters=
+class.Startbutton.superclass=greenfoot.Actor
 target4.type=ClassTarget
 class.BatEnemy.image=bat1.png
 editor.fx.0.y=-9
@@ -212,6 +214,7 @@ target9.x=0
 target4.editor.x=40
 class.Boss.image=bossCore.png
 dependency29.to=Gate
+class.Quitbutton.superclass=greenfoot.Actor
 target11.name=SkeletonEnemy
 target5.y=0
 target5.x=0
@@ -265,6 +268,7 @@ target2.width=80
 class.Menu_text.superclass=greenfoot.Actor
 class.boss_arm.superclass=Boss
 target10.name=Boss_attack
+class.Quitbutton.image=quitbutton.png
 target3.name=BatEnemy
 target13.y=0
 target7.height=50
