@@ -1,0 +1,482 @@
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/FightWorld.class b/GreenFoot-Project/SourceCode/FightWorld/FightWorld.class
+index 69997ce..6adfb60 100644
+Binary files a/GreenFoot-Project/SourceCode/FightWorld/FightWorld.class and b/GreenFoot-Project/SourceCode/FightWorld/FightWorld.class differ
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/FightWorld.ctxt b/GreenFoot-Project/SourceCode/FightWorld/FightWorld.ctxt
+index 93a1baf..841182a 100644
+--- a/GreenFoot-Project/SourceCode/FightWorld/FightWorld.ctxt
++++ b/GreenFoot-Project/SourceCode/FightWorld/FightWorld.ctxt
+@@ -7,6 +7,4 @@ comment1.text=\r\n\ Builds\ a\ FightWorld\ object.\r\n\ \r\n
+ comment2.params=
+ comment2.target=void\ act()
+ comment2.text=\r\n\ \ \r\n
+-comment3.params=
+-comment3.target=void\ go_to_title()
+-numComments=4
++numComments=3
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/FightWorld.java b/GreenFoot-Project/SourceCode/FightWorld/FightWorld.java
+index ceaa6b5..242b7ee 100644
+--- a/GreenFoot-Project/SourceCode/FightWorld/FightWorld.java
++++ b/GreenFoot-Project/SourceCode/FightWorld/FightWorld.java
+@@ -40,9 +40,6 @@ public class FightWorld extends World
+             removeObjects(getObjects(null));
+             setBackground("dead.png");
+             Greenfoot.stop();
+-        }
+-    }
+-    public void go_to_title() {
+-        Greenfoot.setWorld(new TitleWorld());
+     }
+ }
++}
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Menu.class b/GreenFoot-Project/SourceCode/FightWorld/Menu.class
+deleted file mode 100644
+index 212b9cb..0000000
+Binary files a/GreenFoot-Project/SourceCode/FightWorld/Menu.class and /dev/null differ
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Menu.ctxt b/GreenFoot-Project/SourceCode/FightWorld/Menu.ctxt
+deleted file mode 100644
+index ab17859..0000000
+--- a/GreenFoot-Project/SourceCode/FightWorld/Menu.ctxt
++++ /dev/null
+@@ -1,7 +0,0 @@
+-#BlueJ class context
+-comment0.target=Menu
+-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Menu\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+-comment1.params=
+-comment1.target=void\ act()
+-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Menu\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+-numComments=2
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Menu.java b/GreenFoot-Project/SourceCode/FightWorld/Menu.java
+deleted file mode 100644
+index 3dcd409..0000000
+--- a/GreenFoot-Project/SourceCode/FightWorld/Menu.java
++++ /dev/null
+@@ -1,19 +0,0 @@
+-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+-
+-/**
+- * Write a description of class Menu here.
+- * 
+- * @author (your name) 
+- * @version (a version number or a date)
+- */
+-public class Menu extends Actor
+-{
+-    /**
+-     * Act - do whatever the Menu wants to do. This method is called whenever
+-     * the 'Act' or 'Run' button gets pressed in the environment.
+-     */
+-    public void act() 
+-    {
+-        // Add your action code here.
+-    }    
+-}
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Menutext.class b/GreenFoot-Project/SourceCode/FightWorld/Menutext.class
+deleted file mode 100644
+index efa9b97..0000000
+Binary files a/GreenFoot-Project/SourceCode/FightWorld/Menutext.class and /dev/null differ
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Menutext.ctxt b/GreenFoot-Project/SourceCode/FightWorld/Menutext.ctxt
+deleted file mode 100644
+index 882c850..0000000
+--- a/GreenFoot-Project/SourceCode/FightWorld/Menutext.ctxt
++++ /dev/null
+@@ -1,7 +0,0 @@
+-#BlueJ class context
+-comment0.target=Menutext
+-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Menutext\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+-comment1.params=
+-comment1.target=void\ act()
+-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Menutext\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+-numComments=2
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Menutext.java b/GreenFoot-Project/SourceCode/FightWorld/Menutext.java
+deleted file mode 100644
+index 3432342..0000000
+--- a/GreenFoot-Project/SourceCode/FightWorld/Menutext.java
++++ /dev/null
+@@ -1,19 +0,0 @@
+-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+-
+-/**
+- * Write a description of class Menutext here.
+- * 
+- * @author (your name) 
+- * @version (a version number or a date)
+- */
+-public class Menutext extends Menu
+-{
+-    /**
+-     * Act - do whatever the Menutext wants to do. This method is called whenever
+-     * the 'Act' or 'Run' button gets pressed in the environment.
+-     */
+-    public void act() 
+-    {
+-        
+-    }    
+-}
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Title.class b/GreenFoot-Project/SourceCode/FightWorld/Title.class
+deleted file mode 100644
+index a5dee36..0000000
+Binary files a/GreenFoot-Project/SourceCode/FightWorld/Title.class and /dev/null differ
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Title.ctxt b/GreenFoot-Project/SourceCode/FightWorld/Title.ctxt
+deleted file mode 100644
+index 76f3e86..0000000
+--- a/GreenFoot-Project/SourceCode/FightWorld/Title.ctxt
++++ /dev/null
+@@ -1,7 +0,0 @@
+-#BlueJ class context
+-comment0.target=Title
+-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Title\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+-comment1.params=
+-comment1.target=void\ act()
+-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Title\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+-numComments=2
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/Title.java b/GreenFoot-Project/SourceCode/FightWorld/Title.java
+deleted file mode 100644
+index 8d9beb4..0000000
+--- a/GreenFoot-Project/SourceCode/FightWorld/Title.java
++++ /dev/null
+@@ -1,19 +0,0 @@
+-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+-
+-/**
+- * Write a description of class Title here.
+- * 
+- * @author (your name) 
+- * @version (a version number or a date)
+- */
+-public class Title extends Menu
+-{
+-    /**
+-     * Act - do whatever the Title wants to do. This method is called whenever
+-     * the 'Act' or 'Run' button gets pressed in the environment.
+-     */
+-    public void act() 
+-    {
+-        // Add your action code here.
+-    }    
+-}
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.class b/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.class
+deleted file mode 100644
+index cf643d4..0000000
+Binary files a/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.class and /dev/null differ
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.ctxt b/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.ctxt
+deleted file mode 100644
+index 29a5efe..0000000
+--- a/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.ctxt
++++ /dev/null
+@@ -1,7 +0,0 @@
+-#BlueJ class context
+-comment0.target=TitleWorld
+-comment0.text=\r\n\ Write\ a\ description\ of\ class\ TitleWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+-comment1.params=
+-comment1.target=TitleWorld()
+-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ TitleWorld.\r\n\ \r\n
+-numComments=2
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.java b/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.java
+deleted file mode 100644
+index 46a3717..0000000
+--- a/GreenFoot-Project/SourceCode/FightWorld/TitleWorld.java
++++ /dev/null
+@@ -1,23 +0,0 @@
+-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+-
+-/**
+- * Write a description of class TitleWorld here.
+- * 
+- * @author (your name) 
+- * @version (a version number or a date)
+- */
+-public class TitleWorld extends World
+-{
+-
+-    /**
+-     * Constructor for objects of class TitleWorld.
+-     * 
+-     */
+-    public TitleWorld()
+-    {    
+-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+-        super(600, 400, 1); 
+-        addObject(new Title(), 304, 69);
+-        addObject(new Menutext(), 314, 134);
+-    }
+-}
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/images/Fightworld_logo.png b/GreenFoot-Project/SourceCode/FightWorld/images/Fightworld_logo.png
+deleted file mode 100644
+index 954d44b..0000000
+Binary files a/GreenFoot-Project/SourceCode/FightWorld/images/Fightworld_logo.png and /dev/null differ
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/images/rivets.jpg b/GreenFoot-Project/SourceCode/FightWorld/images/rivets.jpg
+deleted file mode 100644
+index 951a730..0000000
+Binary files a/GreenFoot-Project/SourceCode/FightWorld/images/rivets.jpg and /dev/null differ
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/images/text.png b/GreenFoot-Project/SourceCode/FightWorld/images/text.png
+deleted file mode 100644
+index 383390e..0000000
+Binary files a/GreenFoot-Project/SourceCode/FightWorld/images/text.png and /dev/null differ
+diff --git a/GreenFoot-Project/SourceCode/FightWorld/project.greenfoot b/GreenFoot-Project/SourceCode/FightWorld/project.greenfoot
+index 4328aca..1c1d043 100644
+--- a/GreenFoot-Project/SourceCode/FightWorld/project.greenfoot
++++ b/GreenFoot-Project/SourceCode/FightWorld/project.greenfoot
+@@ -47,65 +47,65 @@ dependency12.type=UsesDependency
+ dependency13.from=boss_arm
+ dependency13.to=Boss_attack
+ dependency13.type=UsesDependency
+-dependency14.from=TitleWorld
+-dependency14.to=Title
++dependency14.from=Boss
++dependency14.to=boss_arm
+ dependency14.type=UsesDependency
+ dependency15.from=Boss
+-dependency15.to=boss_arm
++dependency15.to=Sword
+ dependency15.type=UsesDependency
+ dependency16.from=Boss
+-dependency16.to=Sword
++dependency16.to=Boss_attack
+ dependency16.type=UsesDependency
+-dependency17.from=Boss
+-dependency17.to=Boss_attack
++dependency17.from=CatepillarEnemy
++dependency17.to=Sword
+ dependency17.type=UsesDependency
+ dependency18.from=CatepillarEnemy
+-dependency18.to=Sword
++dependency18.to=Gate
+ dependency18.type=UsesDependency
+-dependency19.from=CatepillarEnemy
+-dependency19.to=Gate
++dependency19.from=Sword
++dependency19.to=Fighter
+ dependency19.type=UsesDependency
+ dependency2.from=Fighter
+ dependency2.to=FightWorld
+ dependency2.type=UsesDependency
+-dependency20.from=Sword
++dependency20.from=FightWorld
+ dependency20.to=Fighter
+ dependency20.type=UsesDependency
+ dependency21.from=FightWorld
+-dependency21.to=Fighter
++dependency21.to=Gate
+ dependency21.type=UsesDependency
+ dependency22.from=FightWorld
+-dependency22.to=Gate
++dependency22.to=Sword
+ dependency22.type=UsesDependency
+ dependency23.from=FightWorld
+-dependency23.to=Sword
++dependency23.to=BatEnemy
+ dependency23.type=UsesDependency
+ dependency24.from=FightWorld
+-dependency24.to=BatEnemy
++dependency24.to=CatepillarEnemy
+ dependency24.type=UsesDependency
+ dependency25.from=FightWorld
+-dependency25.to=CatepillarEnemy
++dependency25.to=SkeletonEnemy
+ dependency25.type=UsesDependency
+ dependency26.from=FightWorld
+-dependency26.to=SkeletonEnemy
++dependency26.to=Boss
+ dependency26.type=UsesDependency
+-dependency27.from=FightWorld
+-dependency27.to=Boss
++dependency27.from=Boss_attack
++dependency27.to=Fighter
+ dependency27.type=UsesDependency
+-dependency28.from=FightWorld
+-dependency28.to=TitleWorld
++dependency28.from=Boss_attack
++dependency28.to=Sword
+ dependency28.type=UsesDependency
+-dependency29.from=Boss_attack
+-dependency29.to=Fighter
++dependency29.from=SkeletonEnemy
++dependency29.to=Gate
+ dependency29.type=UsesDependency
+ dependency3.from=Fighter
+ dependency3.to=Enemy
+ dependency3.type=UsesDependency
+-dependency30.from=Boss_attack
++dependency30.from=SkeletonEnemy
+ dependency30.to=Sword
+ dependency30.type=UsesDependency
+-dependency31.from=SkeletonEnemy
+-dependency31.to=Gate
++dependency31.from=boss_eye
++dependency31.to=Sword
+ dependency31.type=UsesDependency
+ dependency32.from=SkeletonEnemy
+ dependency32.to=Sword
+@@ -131,20 +131,20 @@ dependency8.type=UsesDependency
+ dependency9.from=Gate
+ dependency9.to=Boss
+ dependency9.type=UsesDependency
+-editor.fx.0.height=699
+-editor.fx.0.width=812
+-editor.fx.0.x=855
+-editor.fx.0.y=383
++editor.fx.0.height=0
++editor.fx.0.width=0
++editor.fx.0.x=0
++editor.fx.0.y=0
+ editor.swing.0.height=1452
+ editor.swing.0.width=1423
+ editor.swing.0.x=0
+ editor.swing.0.y=0
+-mainWindow.height=1212
+-mainWindow.width=2145
++mainWindow.height=1218
++mainWindow.width=2151
+ mainWindow.x=-9
+ mainWindow.y=-9
+-package.numDependencies=33
+-package.numTargets=16
++package.numDependencies=31
++package.numTargets=12
+ project.charset=UTF-8
+ readme.height=58
+ readme.name=@README
+@@ -166,26 +166,26 @@ target1.width=80
+ target1.x=100
+ target1.y=10
+ target10.height=50
+-target10.name=Sword
++target10.name=Boss_attack
+ target10.naviview.expanded=false
+ target10.showInterface=false
+ target10.type=ClassTarget
+ target10.typeParameters=
+ target10.width=80
+-target10.x=10
+-target10.y=130
++target10.x=0
++target10.y=0
+ target11.height=50
+-target11.name=FightWorld
++target11.name=SkeletonEnemy
+ target11.naviview.expanded=false
+ target11.showInterface=false
+ target11.type=ClassTarget
+ target11.typeParameters=
+-target11.width=90
+-target11.x=190
+-target11.y=10
++target11.width=100
++target11.x=0
++target11.y=0
+ target12.height=50
+-target12.name=Enemy
+-target12.naviview.expanded=false
++target12.name=boss_eye
++target12.naviview.expanded=true
+ target12.showInterface=false
+ target12.type=ClassTarget
+ target12.typeParameters=
+@@ -233,20 +233,20 @@ target2.editor.width=900
+ target2.editor.x=48
+ target2.editor.y=64
+ target2.height=50
+-target2.name=Menutext
++target2.name=Gate
+ target2.naviview.expanded=true
+ target2.showInterface=false
+ target2.type=ClassTarget
+ target2.typeParameters=
+ target2.width=80
+-target2.x=0
+-target2.y=0
++target2.x=70
++target2.y=70
+ target3.editor.height=700
+ target3.editor.width=900
+ target3.editor.x=40
+ target3.editor.y=42
+ target3.height=50
+-target3.name=Title
++target3.name=BatEnemy
+ target3.naviview.expanded=true
+ target3.showInterface=false
+ target3.type=ClassTarget
+@@ -259,17 +259,17 @@ target4.editor.width=900
+ target4.editor.x=40
+ target4.editor.y=42
+ target4.height=50
+-target4.name=Gate
++target4.name=boss_arm
+ target4.naviview.expanded=true
+ target4.showInterface=false
+ target4.type=ClassTarget
+ target4.typeParameters=
+ target4.width=80
+-target4.x=70
+-target4.y=70
++target4.x=0
++target4.y=0
+ target5.height=50
+-target5.name=BatEnemy
+-target5.naviview.expanded=true
++target5.name=Boss
++target5.naviview.expanded=false
+ target5.showInterface=false
+ target5.type=ClassTarget
+ target5.typeParameters=
+@@ -277,39 +277,39 @@ target5.width=80
+ target5.x=0
+ target5.y=0
+ target6.height=50
+-target6.name=boss_arm
+-target6.naviview.expanded=true
++target6.name=CatepillarEnemy
++target6.naviview.expanded=false
+ target6.showInterface=false
+ target6.type=ClassTarget
+ target6.typeParameters=
+-target6.width=80
++target6.width=110
+ target6.x=0
+ target6.y=0
+ target7.height=50
+-target7.name=TitleWorld
++target7.name=Sword
+ target7.naviview.expanded=false
+ target7.showInterface=false
+ target7.type=ClassTarget
+ target7.typeParameters=
+ target7.width=80
+-target7.x=0
+-target7.y=0
++target7.x=10
++target7.y=130
+ target8.height=50
+-target8.name=Boss
++target8.name=FightWorld
+ target8.naviview.expanded=false
+ target8.showInterface=false
+ target8.type=ClassTarget
+ target8.typeParameters=
+-target8.width=80
+-target8.x=0
+-target8.y=0
++target8.width=90
++target8.x=190
++target8.y=10
+ target9.height=50
+-target9.name=CatepillarEnemy
++target9.name=Enemy
+ target9.naviview.expanded=false
+ target9.showInterface=false
+ target9.type=ClassTarget
+ target9.typeParameters=
+-target9.width=110
++target9.width=80
+ target9.x=0
+ target9.y=0
+ version=3.0.0
+diff --git a/GreenFoot-Project/images/Fightworld_logo.png b/GreenFoot-Project/images/Fightworld_logo.png
+deleted file mode 100644
+index 954d44b..0000000
+Binary files a/GreenFoot-Project/images/Fightworld_logo.png and /dev/null differ
+diff --git a/GreenFoot-Project/images/text.png b/GreenFoot-Project/images/text.png
+deleted file mode 100644
+index 383390e..0000000
+Binary files a/GreenFoot-Project/images/text.png and /dev/null differ

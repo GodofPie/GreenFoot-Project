@@ -40,6 +40,9 @@ public class FightWorld extends World
             removeObjects(getObjects(null));
             setBackground("dead.png");
             Greenfoot.stop();
+        }
     }
-}
+    public void goto_title() {
+        Greenfoot.setWorld(new Titleworld());
+    }
 }
